@@ -1,0 +1,52 @@
+.newSeason {
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nsItem {
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.nsT {
+  position: absolute;
+  bottom: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+.nsImg {
+  width: 100%;
+  height: 100%;
+}
+
+.nsTitle {
+  font-size: 40px;
+}
+
+.nsButton {
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+@media screen and (max-width: 480px) {
+  .newSeason {
+    flex-direction: column;
+  }
+
+  .nsItem:nth-child(2) {
+    padding: 50px;
+  }
+}
